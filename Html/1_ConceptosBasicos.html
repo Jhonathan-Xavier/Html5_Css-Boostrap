@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básicos</title>
+</head>
+<body>
+    
+    <h1>Encabezados... </h1>
+
+    <h1>Ecabezado h1</h1>
+    <h2>Encabezado h2</h2>
+    <h3>Encabezado h3</h3>
+    <h4>Encabezado h4</h4>
+    <h5>Encabezado h5</h5>
+    <h6>Encabezado h6</h6>
+    <h7>h7 en adelante no existe...</h7> <!--Sera reconocido como tenxto normal-->
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Párrafos...</h1>
+
+
+    <p>La etiqueta p se usa para que el texto se escriba en una nueva linea</p>
+    <p>La etiqueta "br" sirve también para eso pero... <br> sin tanto espacio entre lineas</p>
+
+    <!--Br no tiene cierre porque es simplemente un salto de linea, NO RODEA NADA!-->
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Calígrafía... </h1>
+
+    <p>Texto en <b>negrita</b></p> <!--También se puede usar "strong"-->
+    <p>Texto en <i>cursiva</i></p> <!--También se puede usar "em"-->
+    <p>Texto en <u>subrayado</u></p> <!--También se puede usar "ins"-->
+    <p>Texto en <sup>elevado</sup>a</p> 
+    <p>Texto en <sub>sub</sub> de </p> 
+    <p>Texto en <del>tachado</del></p> 
+    <p>Texto en <mark>resaltado</mark></p> 
+    <p>Texto en <small>chiquito</small></p> 
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Trazo de Línea...</h1>
+    <hr><!--Se usa para trazar una linea-->
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Listas...</h1>
+    <h2>Desordenadas</h2>
+
+    <ul> <!--Sirve para crear una lista desordenada-->
+
+        <li>Item 1</li> <!--Sirve para añadir a la lista;: list insert = li -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+
+    </ul>
+    
+    <h2>Ordenadas</h2>
+
+    <ol type="I"> <!--Sirve para crear una lista ordenada, me permite añadir un atributo "start" y definir desde qué numero quiero que empieze la lista, o el tipo de orden (letrasm numeros, etc...)-->
+
+        <li>Item 1</li> 
+        <li>Item 2</li>
+        <li>Item 3</li>
+
+    </ol>
+
+    <hr>
+    <!------------------------------------------------------------------------------------------------>
+   
+    <h1>Listas anidadas...</h1>  
+    <h3>Los dl, dd, y dt elementos</h3>
+    <p>Son elementos que ayudan a crear una  "description list":</p>
+
+    <dl><!--Padre: data list-->
+    <dt>Coffee</dt> <!--Hijo: data top-->
+    <dd>Black hot drink</dd><!--Nieto: data-->
+    <dt>Milk</dt>
+    <dd>White cold drink</dd>
+    </dl>
+
+
+   
+    <h1>Links...</h1>
+    <a href="https://www.w3schools.com">Link a la página del Tutotial :D</a> <!--El atributo href es para hacer referencia a páginas-->
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Botón...</h1>
+    <button>Presiona me</button>
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Comillas simples...</h1>
+    <p>Tienes que pasar el mouse sobre el siguiente párrafo: </p>
+    <p title="John 'ShotGun' Nelson">John con comillas simples</p>
+    
+    <!--En ambos el titulo debe estar todo cubierto con " " y solo el texto que queremos que se presente con comillas simples-->
+
+    <h1>Comillas dobles...</h1>
+    <p>Tienes que pasar el mouse sobre el siguiente párrafo: </p>
+    <p title='John "ShotGun" Nelson'>John con comiilas dobles</p>
+
+    <h1>Enfásis...</h1> <!--La eqituqeta "q" pone las palabras entre comillas-->
+    <p>Y el cuervo dijo: <q>Nunca más</q></p>
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>El problema del Poeta...</h1>
+    <p> <!--No importa si tu le das formato aqui, el navegador lo ignorará -->
+        ¿Qué es poesía? dices mientras,
+        clavas en mi tu azul pupila
+        ¿Qué es poesía? ¿Y tú me lo dices?,
+        Poesía eres tú!
+    </p>
+
+    <pre><!--Aquí en cambio, esta etiqueta nos permite establecer el formato de como se verá en el navegador-->
+
+    ¿Qué es poesía? dices mientras,
+    clavas en mi tu azul pupila
+    ¿Qué es poesía? ¿Y tú me lo dices?,
+    Poesía eres tú!
+
+    </pre>
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Citas...</h1>
+
+    <!--Para hacer referencias: debes traer el sitio web de donde vas a parafrasear o hacer referencia-->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html"> 
+    <!--Esto es el texto que recopilaste de allí, automáticamete se aplica a un formato, se identa para dennotar que estamos referenciando, como en normas APPA-->
+    For nearly 60 years, WWF has been protecting the future of nature. 
+    The world's leading conservation organization, 
+    WWF works in 100 countries and is supported by more than one million members 
+    in the United States and close to five million globally.<!--No te asustes si no parece, si le minimizas verás que se va ajustando!-->
+    </blockquote>
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Abreviación o Acrónimo...</h1><small>(Pasa el mouse sobre "OMS": )</small> <!--Utiliza la etiqueta abbr--> 
+    <p>La <abbr title="Organización Mundial de la Salud">OMS</abbr> fue fundada en 1948.</p>
+
+    <h1>Dirección...</h1>
+    <address> <!--Usa la etiqueta address para poner tus credenciales con un formato tipo "pre"-->
+    Written by John Pizrra.<br>
+    Visit us at: EPN<br>
+    https://www.facebook.com/Johnathan.Xavier19<br>
+    Box 564, Disneyland<br>
+    EC
+    </address>
+    
+    <h1>Citas#2...</h1> <!--Se utiliza para resaltar titulos de algunos trabajos de autores-->
+    <img src="images/monalisa.jfif" width="220" height="277" alt="The Scream">
+    <p><cite>La Monalisa</cite> por Leonardo da Vinci. Pintado en 1797.</p>
+   
+    <h1>Links#2...</h1>
+
+    <a href="https://www.w3schools.com" target="_blank">Link en una nueva pestaña</a> <!--El atributo target es para direccionar a páginas-->
+    <br>
+    <a href="https://www.w3schools.com" target="_self">Link en una la misma pestaña</a> <!--El atributo target es para direccionar a páginas-->
+    <br>
+    <a href="https://www.youtube.com/watch?v=30i-4l7ZNQY&t=332s" target="_parent">Link en el padre de las pestañas</a> <!--El atributo target es para direccionar a páginas-->
+    <br>
+    <a href="https://www.youtube.com/watch?v=30i-4l7ZNQY&t=332s" target="_top">Link en el top de las pestañas</a> <!--El atributo target es para direccionar a páginas-->
+    <br>
+    <a href="https://www.youtube.com/watch?v=1Fx0tP4Mmf4&t=191s" target="miFrame">Link en la pestaña que especifiques</a> <!--El atributo target es para direccionar a páginas-->
+   
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Links#3...</h1>
+    clickea a clipo! <br>
+    <a href="videos/eternalFlame.mp4"> <!--href="default.asp" -->
+        <img src="images/clipo.gif" alt="Click me!" style="width:100px;height:100px;border:0;">
+    </a>
+
+    <!------------------------------------------------------------------------------------------------>
+    <h1>Links#4...</h1>
+    <button onclick="document.location = 'index_0.html'">Ir a otro documento</button> <!--Busca entre los documentos de la dirección C:/Codes/Front/Html/el que tenga el nombre: index_0.html-->
+
+    <h1>Links#5...</h1><!--Los titulos dan información de qué pasará si doy click-->
+    <p>Pasa el mouse sobre los links anteriores (El de la imagen, el boton, etc)</p><br>
+    <p>Ahora pasa el mouse sobre este: </p>
+    <a href="https://animeblix.com/" title="Ir a Anitoons">Visit our HTML Tutorial</a>
+
+    <!------------------------------------------------------------------------------------------------>
+   <!--Los títulos deben tener un "id" por el cuál serán reconocidos dentro de este mismo documento, el "id" también sirve para referencias externas que veremos en CSS-->
+    <h1>Ir a...</h1>
+    <a href="#C4">Ir al capítulo 4</a><br>
+    <a href="#C10">Ir al capítulo 10</a>
+
+    <h2>Capítulo 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 3</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C4">Capítulo 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 7</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 8</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 9</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C10">Capítulo 10</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 11</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 12</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 13</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 14</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 15</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 16</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 17</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 18</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 19</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 20</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 21</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 22</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Capítulo 23</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <!------------------------------------------------------------------------------------------------------->
+    <h1>Nav...</h1>
+    <nav> <!--Si quieres que se presenten hacia abajo con el CSS deberías hacer un display:block-->
+        <a href="#">HTML</a> |
+        <a href="#">CSS</a> |
+        <a href="#">JavaScript</a> |
+        <a href="#">jQuery</a>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------------------->
+    <h1>Span...</h1> <!--Debe tener una etiqueta de cierre también, no le puse p-->
+    <ol>
+        <li>La etiqueta <span> se usa para agrupar elementos en línea en un documento.</span></li>
+        <li>La etiqueta <span> no proporciona ningún cambio visual por sí mismo.</span></li>
+        <li>La etiqueta <span> proporciona una manera de agregar un enlace a una parte de un texto o parte de un documento.</span></li>
+    </ol>
+
+    <!------------------------------------------------------------------------------------------------------->
+    <h1>El Keyboard...</h1> <!--En algunos navegadores no funciona, mejor usa Chrome-->
+    <p>El kbd elemento representa lo que el usuario debe escribir:</p>
+    <p>Para guardar el documento, presiona las teclas: <kbd>Ctrl + S</kbd></p>
+
+    <!------------------------------------------------------------------------------------------------------->
+    <h1>Code...</h1>
+    <code>
+        x = 5;<br>
+        y = 6;<br>
+        z = x + y;
+    </code>
+
+    <h1>Variables...</h1><!--No son leidos como texto y sirven para representar lo que sería a un lengujae de programacion-->
+    <p>Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.</p>
+    
+    <!------------------------------------------------------------------------------------------------------->
+    <h1>Samp...</h1>
+    <p>The samp element represents la salida de un programa o un sistema:</p>
+    <p>If you input wrong value, the program will return <samp>Error!</samp></p>
+
+
+
+    <!------------------------------------------------------------------------------------------------------->
+    <em>Más información en: </em>
+    <a href="https://www.w3schools.com/tags/ref_colornames.asp" target="_blank" title="w3schools">Todas las etiquetas HTML y algo más!</a>
+  
+    
+</body>
+</html>

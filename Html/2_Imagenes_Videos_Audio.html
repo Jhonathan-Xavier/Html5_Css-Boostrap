@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básicsos</title>
+</head>
+
+<style> /*Así se pone imagenes de fondo ajustadas y que cubran todo, pero indagaremos mas en CSS*/
+    body {
+      background-image: url('images/fondo.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+</style>
+
+<body>
+
+    <div>
+        <h1>Imágenes... </h1>
+        <!--Descargar una imagen-->
+        <img src="images/angemon.jpg" width="200" align="right"> <!--Imagen debe ser con la extensión que concierna: .jpg, .png, etc.-->
+        <!--El src es para hacer refrenecia a una imagen, local o remota-->
+        <!--Width: Alto-->
+        <!--Height: Ancho-->
+        <!--alt: texto de infmoración (Nombre de la imágen)-->
+        <!--align: Alineación a -->  <!--Esto por ejemplo permite que el texto que venga después este al lado, abajo, en frente o atrás de la imagen-->
+        <p> Angemon !</p>
+
+        <img src="https://digimonmexico.webcindario.com/imagenes/Patamon1.png" width="200" height="200" align="left"> 
+        <!--Imagen que viene de internet: debe copiar la dirección del enlace, se vincula desde el servidor-->
+    </div>
+
+    <br>
+    <hr><!--Se usa para trazar una linea-->
+    <!----------------------------------------------------------------------------------------------------------->
+    <div>
+    <h1>Imagenes #2...</h1>
+        <!--Diferencia entre Style y atributos with--height-->
+        <img src="images/angemon.jpg" alt="Angelmon" style="width:200px;height:200px;">
+        <img src="images/angemon.jpg" width="200" height="200"> <!--Imagen debe ser con la extensión que concierna: .jpg, .png, etc.-->
+
+    </div>
+
+    <div>
+    <hr>
+    <h1>Imágenes #3</h1>
+    <p><img src="images/gokuGT.png" alt="Goku SSJ GT" style="float:left;width:80px;height:80px;">
+        Puedo poner texto a la derecha o izquierda de la imagen!</p>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------->
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <!--Para ver el area de un mapa debes dar click en dónde creas que está y tenerlo aplastado-->
+    <div>
+        <h1>Mapas...</h1> <!--Puede que en Chrome funcione lo que en Edge no-->
+        <img src="images/pokemons.png" alt="Pokemons" usemap="#pokemon">
+        <map name="pokemon">
+            <area shape="rect" coords="34,04,130,150" alt="Vaporeon" href="https://sco.wikipedia.org/wiki/Vaporeon" target="_blank"> <!--Shape rect define una región en forma de rectángulo-->
+            <!--Cooredenadas: empiezan en 34 pixeles desde el margen izquierdo y 44 desde arriba, hasta el 270 hacia la derecha y 350 hacia abajo, cubriendo así toda la iamgen!--> 
+            <area shape="rect" coords="350,04,475,170" alt="Charizard" href="https://es.wikipedia.org/wiki/Charizard" target="_blank"> <!--Shape ply define una región en forma de poligonal-->
+            <area shape="default" coords="337,300,44" alt="Pokemons" href="https://es.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank"> <!--Shape defaut define toda la región-->
+            <!--Toma las coordenadas de todo el recuadro de la imagen-->
+            <area shape="circle" coords="355,250,60" alt="Pikachu" href="https://en.wikipedia.org/wiki/Pikachu" target="_blank"> <!--Shape circle  define región en forma de círsuclo-->
+            <!--Las coordenadas del centro del círculo son 337, 250 y el radio de 44-->
+        </map>
+    
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <h1>Videos...</h1>
+    <video width="320" height="240" controls> <!--controls sirve para indicar al video que puede ser clickeado para reproducir o poner en pausa-->
+        <!--Otros atributos que se usan además de controls son : muted, loop, poster(debes poner poster=('url') de la imagen que se presentará como portada de video, preload=(puede ser none, auto, o metadata son para el el video cargue, no cargue o carge cuando la página haya cargado por completo)-->
+
+        <source src="videos/benjaminButton.mp4" type="video/mp4">
+    </video>
+
+    <h1>Titulo de Imágen...</h1>
+    <figure>
+       <img src="images/heart.jpg" alt="Music" style="width:25%">
+       <figcaption>Fig.1 - Heart, Puglia, Italy.</figcaption>
+     </figure>
+      
+    
+    
+</body>
+</html>
